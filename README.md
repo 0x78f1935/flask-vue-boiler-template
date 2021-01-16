@@ -1,4 +1,4 @@
-# Flask - Vue, Boiler template [![Build Status](https://travis-ci.org/0x78f1935/flask-vue-boiler-template.svg?branch=master)](https://travis-ci.org/0x78f1935/flask-vue-boiler-template)
+# Flask - Vue, Boiler template
 
 A boiler template for flask in combination with Vue.
 
