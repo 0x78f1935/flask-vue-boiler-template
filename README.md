@@ -65,8 +65,6 @@ In order to compile a `production` ready build, use the following command in you
 
 ## Python
 
-## Python
-
 The frontend is independent from the backend. Therefor you can execute the following code in the root folder of the \
 boiler template. Create a virtual environment with your favorite venv package and activate it.
 
