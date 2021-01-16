@@ -1,0 +1,40 @@
+{
+  "name": "flask-vue-boiler-template",
+  "version": "1.0.0",
+  "description": "A boiler template for a Python Flask backend and VUE (Single page or Multi page) application for the frontend",
+  "main": "main.js",
+  "scripts": {
+    "watch": "webpack --progress --mode development --hot --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:0x78f1935/flask-vue-boiler-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/0x78f1935/flask-vue-boiler-template",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/runtime": "^7.12.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-manifest-plugin": "^3.0.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"
+  }
+}

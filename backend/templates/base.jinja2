@@ -1,0 +1,50 @@
+{% block document %}
+<!DOCTYPE html>
+<html {% block html_attribs %}{% endblock html_attribs %}>
+    {% block html %}
+        <head>
+            {% block head %}
+                <title>{% block title %}{% if title %} {{title}} {% else %} Localhost {% endif %}{% endblock title %}</title>
+            {% endblock head %}
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            {% block meta %}
+            {% endblock meta %}
+
+            <link rel="stylesheet" href="{{ 'main.css' | webpack }}">
+            {% block styles %}
+            {% endblock styles %}
+        </head>
+
+        <body {% block body_attribs %}{% endblock body_attribs %}>
+            {% block body %}
+                {% block navbar %}
+                    <div id="nav"></div>
+                {% endblock navbar %}
+
+                {% block app %}
+                    <div id="app"></div>
+                {% endblock app %}
+
+                {% block content %}
+                    <div id="content"></div>
+                {% endblock content %}
+
+                {% block base_scripts %}
+                    <script>
+                        const version = '{{get_version_number()}}';
+                    </script>
+                    <script src="{{ 'main.js' | webpack }}" type="text/javascript"></script>
+                {% endblock base_scripts %}
+
+                {% block scripts %}
+                {% endblock scripts %}
+                
+            {% endblock body %}
+        </body>
+    
+    {% endblock html %}
+</html>
+
+{% endblock document %}
