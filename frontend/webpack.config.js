@@ -1,7 +1,6 @@
 const { join, resolve } = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const { HotModuleReplacementPlugin } = require('webpack');
-// const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -51,12 +50,6 @@ module.exports = {
     plugins: [
         new HotModuleReplacementPlugin(),
         new VueLoaderPlugin(),
-
-        // new HTMLWebpackPlugin({
-        //     showErrors: true,
-        //     cache: true,
-        //     template: join(__dirname, 'index.html')
-        // }),
 
         new WebpackManifestPlugin({
             fileName: './manifest.json',
