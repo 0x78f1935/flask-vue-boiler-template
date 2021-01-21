@@ -1,7 +1,7 @@
 // Vue.js Filters
 // https://vuejs.org/v2/guide/filters.html
 
-import Vue from 'vue/dist/vue.js';
+import Vue from 'vue';
 
 let filters = {
 

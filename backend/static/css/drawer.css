@@ -1,0 +1,4 @@
+/* Hides scrollbar from drawer menu */
+.v-navigation-drawer__content {
+    overflow-y: hidden !important;
+}

@@ -44,6 +44,25 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.s(c|a)ss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                        },
+                    }
+                ]
+            },
+            { 
+                test: /\.(jpe?g|png|gif|svg|eot|woff|ttf|svg|woff2)$/, 
+                use: [
+                    'file-loader'
+                ]
             }
         ],
     },
@@ -58,6 +77,6 @@ module.exports = {
 
         new MiniCssExtractPlugin({
             filename: "[name].css"
-        })
+        }),
     ]
 }

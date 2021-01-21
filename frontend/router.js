@@ -1,4 +1,4 @@
-import Vue from 'vue/dist/vue.js';
+import Vue from 'vue';
 import Router from 'vue-router';
 
 import HomePage from './views/homepage.vue';

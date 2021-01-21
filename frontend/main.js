@@ -1,15 +1,17 @@
-import Vue from 'vue/dist/vue.js';
+import Vue from 'vue';
 import Router from './router.vue';
 import router from './router';
 import store from './store';
 
 import './filters';
+import vuetify from './plugins/vuetify';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
     router,
     store,
+    vuetify,
     watch: {
         '$route' (to) {
             if(to.meta.MPA) {
